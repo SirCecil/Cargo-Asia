@@ -1,0 +1,119 @@
+.calc {
+  background-color: #f7f7f7;
+}
+.calc__wrapper {
+  margin-top: 40px;
+  display: flex;
+}
+.calc__cost {
+  flex: 0 1 60%;
+}
+.calc__cost-title {
+  max-width: 70%;
+  font-size: 34px;
+  font-family: Montserrat-Bold;
+}
+.calc__form {
+  max-width: 80%;
+}
+.calc__check-wrap {
+  margin: 30px 0 40px 0;
+  display: flex;
+}
+.calc__check {
+  color: #ffffff;
+  font-family: Montserrat-Bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1e1e1;
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  &:not(:first-child) {
+    margin-left: 100px;
+    &::after {
+      content: "";
+      top: 50%;
+      left: -170%;
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      background-color: #e1e1e1;
+    }
+  }
+  &:last-child {
+    background-image: url(../img/confirm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &.check_active {
+    background-color: #ffb900;
+  }
+}
+.calc__step1 {
+}
+.calc__inp-wrapp {
+  max-width: 85%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.inp-warning {
+  border-right: 7px solid #f40000;
+}
+.calc__step1-inp {
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(201, 201, 201, 0.62);
+  margin-top: 20px;
+  max-width: 250px;
+  flex: 0 0 40%;
+  background-color: #fff;
+  padding: 20px 25px;
+
+}
+
+.main-btn{
+  cursor: pointer;
+}
+.calc__step1-btn {
+}
+.calc__step1-varning {
+  margin-left: 25px;
+  color: red;
+  letter-spacing: normal;
+  font-size: 16px;
+}
+.calc__step2 {
+  display: none;
+}
+.calc__step2-name {
+}
+.calc__step1-tel {
+}
+.calc__step1-comment {
+}
+.calc__step3 {
+  display: none;
+}
+.calc__step3-text {
+}
+.calc__step3-subtext {
+}
+.calc__step3-list {
+}
+.calc__step3-item {
+}
+.calc__step3-link {
+}
+.calc__imgBl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 40%;
+}
+.calc__img {
+}
